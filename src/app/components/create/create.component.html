@@ -1,27 +1,33 @@
-<form>
-    <h1>CRIANDO NOVO TO-DO</h1>
+<section>
+    <form>
+        <h1>CRIANDO NOVO TO-DO</h1>
 
-    <mat-form-field class="data-finalizar" appearance="fill">
-        <mat-label>DATA PARA FINALIZAR</mat-label>
-        <input [(ngModel)]="todo.dataParaFinalizar" name="todo.dataParaFinalizar" matInput [matDatepicker]="dp3" disabled>
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix [for]="dp3"></mat-datepicker-toggle>
-        <mat-datepicker #dp3 disabled="false"></mat-datepicker>
-    </mat-form-field>
-
-    <div class="forms">
-        <mat-form-field class="form">
-            <mat-label>Título</mat-label>
-            <input [(ngModel)]="todo.titulo" name="todo.titulo" matInput placeholder="Ex. Estudar Spring">
+        <mat-form-field class="data-finalizar" appearance="fill">
+            <mat-label>DATA PARA FINALIZAR</mat-label>
+            <input [(ngModel)]="todo.dataParaFinalizar" name="todo.dataParaFinalizar" matInput [matDatepicker]="dp3"
+                disabled>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="dp3"></mat-datepicker-toggle>
+            <mat-datepicker #dp3 disabled="false"></mat-datepicker>
         </mat-form-field>
 
-        <mat-form-field class="form">
-            <mat-label>Descrição</mat-label>
-            <input [(ngModel)]="todo.descricao" name="todo.descricao" matInput placeholder="Ex. Estudar Spring Boot">
-        </mat-form-field>
-    </div>
-    <div class="buttons">
-        <button (click)="create()" class="novo-todo mat-elevation-z8" mat-stroked-button color="primary">CRIAR</button>
-        <button (click)="cancel()" class="novo-todo mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
-    </div>
-</form>
+        <div class="forms">
+            <mat-form-field class="form">
+                <mat-label>Título</mat-label>
+                <input [(ngModel)]="todo.titulo" name="todo.titulo" matInput placeholder="Ex. Estudar Spring">
+            </mat-form-field>
+
+            <mat-form-field class="form">
+                <mat-label>Descrição</mat-label>
+                <input [(ngModel)]="todo.descricao" name="todo.descricao" matInput
+                    placeholder="Ex. Estudar Spring Boot">
+            </mat-form-field>
+        </div>
+        <div class="buttons">
+            <button (click)="create()" class="novo-todo mat-elevation-z8" mat-stroked-button
+                color="primary">CRIAR</button>
+            <button (click)="cancel()" class="novo-todo mat-elevation-z8" mat-stroked-button
+                color="warn">CANCELAR</button>
+        </div>
+    </form>
+</section>

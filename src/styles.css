@@ -1,4 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    margin: 0 auto;
+    /* max-width: 1120px; */
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: linear-gradient(150deg, #000, #494648);
+    background-size: 120% 120%;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.content mat-card mat-card-header mat-card-title {
+    color: #e2e2e2;
+}
+
+.content mat-card mat-card-header mat-card-subtitle{
+    color: #d3d3d3;
+}
+
+mat-hint{
+    color: #fff;
+}

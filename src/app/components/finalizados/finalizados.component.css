@@ -7,7 +7,7 @@ h1 {
     text-align: center;
     font-weight: 600;
     margin-top: 1rem;
-    color: rgb(114, 111, 111);
+    color: rgb(255, 255, 255);
 }
 
 .badge {
@@ -34,6 +34,7 @@ mat-card {
 p {
     text-align: end;
     font-weight: 600;
-    color: rgb(114, 111, 111);
-    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    /* margin-bottom: 0; */
+    margin: 0 8px;
 }
